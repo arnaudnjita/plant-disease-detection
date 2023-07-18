@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left-div">
+        <p>Hello Njita :)</p>
+        <h1>Maize Leaf Disease Detection</h1>
+        <h2>
+          Use our tool to quickly and reliably detect leaf infections on your
+          maize plant and avoid the risk of losing your crops
+        </h2>
+      </div>
+      <div class="right-div">
+          <input style="display: none" type="file" id="upload" />
+          <div class="top-div">
+            <div class="image-container">
+              <img id="chosen-image" />
+              <div id="img-icon" style="text-align: center;">
+                <iconify-icon icon="ri:image-add-line" height="60px"></iconify-icon>
+              <p>Upload plant image</p>
+              </div>
+              <div id="file-name"></div>
+            </div>
+          </div>
+          <div class="result-div">Result: Blight</div>
+          <div class="btn-div">
+            <label for="upload" class="btn2">Upload</label>
+            <label class="btn1">Predict</label>
+          </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
